@@ -40,14 +40,14 @@ li {
 
 nav {
     height: 100%;
-    width: 120px;
+    width: 85px;
     position: fixed;
     padding: 20px;
     background-color: rgb(13, 13, 13);
 }
 
 nav a {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
     color: white;
 }
