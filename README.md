@@ -9,7 +9,7 @@ https://algofam.tech
 - Add dark and light mode switch :white_check_mark:
 - Save theme (dark/light) prefrences to local storage :white_check_mark:
 - Add footer :white_check_mark:
-- Add humburger navbar (?)
+- Add humburger navbar (?) or scrollable top navbar
 - Content: Add more information about Algorand
 - Content: Add cool facts section 
 - Improve the design
