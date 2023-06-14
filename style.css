@@ -89,3 +89,9 @@ main {
     line-height: 2;
     font-size: 18px;
 }
+
+footer p {
+    color: var(--textColor);
+    font-size: 15px;
+    font-weight: 600;
+}
