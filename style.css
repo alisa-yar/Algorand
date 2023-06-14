@@ -18,10 +18,6 @@
     --navText: #6C6D70; 
 }
 
-html {
-    background-color: black;
-}
-
 body {
     margin: 0; 
     font-family: 'Inter', sans-serif;
