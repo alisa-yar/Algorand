@@ -10,7 +10,7 @@
 }
 
 .light-mode {
-    --bg: #FFF;
+    --bg: white;
     --textColor: black;
     --textColorSec: #6C6D70;
     --select: #818181;
