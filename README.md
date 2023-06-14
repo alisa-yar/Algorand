@@ -13,4 +13,5 @@ https://algofam.tech
 - Content: Add more information about Algorand
 - Content: Add cool facts section 
 - Improve the design
+- Add a form that'll enable others send cool facts/information
 
