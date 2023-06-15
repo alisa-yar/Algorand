@@ -14,4 +14,5 @@ https://algofam.tech
 - Content: Add cool facts section 
 - Improve the design
 - Add a form that'll enable others send cool facts/information
+- Add search to the glossary
 
