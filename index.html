@@ -6,72 +6,112 @@
     <link rel="stylesheet" href="style.css">
     <title>Algorand</title>
     <link rel="icon" href="icons/algorand.png">
+    <script src="js/dark.js"></script>
+    <!-- <script src="js/menu.js"></script> -->
 </head>
 
 <body>
-    <nav>
+    <!-- <img id="menu" onclick="toggleMenu()" src="icons/menu-white.png"> -->
+    <nav id="navbar">
         <a id="active" href="#">About</a>
         <a href="tools.html">Tools</a>
-        <a href="info.html">Resources</a>   
+        <a href="info.html">Resources</a> 
+        <a href="glossary.html">Glossary</a>  
         <img id="icon" onclick="changeTheme()" src="icons/sun.png">    
-    </nav>
-
+    </nav> 
+    
     <main>
+    <div class="card">
         <h1>Algorand</h1>
-        <article>
-            <h2>About</h2>
-            <p>Algorand is a blockchain network created in 2017 by Silvio Micali, an MIT professor who won the Turing Award for his work in cryptography.</p>
-            <p>Algorand is a decentralized permissionless blockchain protocol that anyone can use to develop applications and transfer value.</p>
-            <p>The Algorand protocol is powered by a novel consensus algorithm that enables fast, secure and scalable transactions.</p>
-            <p>Algorand addresses the common issues that most older blockchains have, specifically concerning scalability and consensus.</p>
-            <p>The blockchain uses Pure proof-of-stake (PPoS), a consensus protocol that selects validators at random according to the weight of their stake in ALGO coins.</p>
+        <article class="about">
+            <h2>Basic Facts</h2>
+            <p>Algorand blockchain was founded in 2017 by Silvio Micali, and launched its mainnet in June 2019.</p>
+            <p>Algorand is a fully decentralized, secure, and scalable Layer 1 blockchain.</p>
+            <p>The total $ALGO supply is 10,000,000,000A and the circulating supply is <a href="https://algoexplorer.io">7,249,000,000A</a>.</p>
+            <p>Algorand can proccess 6000 transactions per second and will be capble of proccessing 10,000 transactions per second and even <a href="https://algorand.com/resources/blog/algorand-building-scalable-sustainable-blockchain-ecosystem">46,000 tps</a> in the future.</p>
+            <p>Algorand Finality is currently 4.5 seconds and the block proposal time is 0.5 seconds.</p>
+            <p>The transaction fee is 0.001A (~$0.00011).</p>
+            <!-- <p>Algorand provides SDKs for developing in Python, Javascript, Go, and Java, and there are many more community-developed SDKs.</p> -->
         </article>
 
-        <article>
-            <h2>Silvio Michali</h2>
-            <p>At Algorand, Silvio oversees all research, including theory, security and crypto finance related to the decentralized blockchain.</p>
-            <p>Aside from being an MIT faculty member since 1983, he is a member of the National Academy of Sciences, the National Academy of Engineering, the American Academy of Arts and Sciences and Accademia dei Lincei.</p>
-            <p>Silvio received his Laurea in mathematics from the University of Rome, and his Ph.D. in computer science from the University of California at Berkeley.</p>
-            <p>Silvio Micali (the founder): professor of c.s. at MIT, received the and Gödel prize and Turing award at 2012 for contributing to the theory and practice of secure 2-way computing electronic money cryptocurrencies and blockchain protocols.</p>
-            <p>Inventor of zero knowledge proof, his PHD was about Byzantine agreement (a protocol for getting nodes in a distributed system to agree on state change).</p>
+        <article class="about">
+            <h2>Silvio Micali (Founder)</h2>
+            <p>Silvio has been on the faculty at MIT, Electrical Engineering and Computer Science Department, since 1983.</p>
+            <p>Moreover, Silvio is the co-inventor of probabilistic encryption, Zero-Knowledge Proofs and many other protocols that are the foundations of modern cryptography.</p>
+            <p>He is a recipient of the Turing Award in computer science (the Nobel Prize of computer science), in addition to the Gödel Prize (in theoretical computer science) and the RSA prize (in cryptography).</p>
+            <!-- <p>At Algorand, Silvio oversees all research, including theory, security and crypto finance related to the decentralized blockchain.</p> -->
         </article>
 
-        <article>
-            <h2>PPoS (Pure Proof of Stake)</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, asperiores?</p>
-        </article>
-
-        <article>
-            <h2>The Blockchain Trilemma</h2>
-            <p>The Algorand protocol is designed to solve three of the biggest problems most blockchains face: security, scalability and decentralization.</p>
-            <p>Dubbed as the “blockchain trilemma”, the Algorand network claims to address the following three major issues.</p>
+        <article class="about">
+            <h2>The Blockchain Trilemma</h2> 
+            <h2 class="subtitle">(Security, Scalability and Decentralization)</h2>
+            <p>The Algorand protocol designed to solve three of the biggest problems most blockchains face: security, scalability and decentralization ("The Blockchain Trilemma").</p>
+            <!-- <p>Thanks to the PPoS consensus algorithm, The key element that Algorand relies on is: Randomness.</p>
+            <p>Randomness helps Algorand ensure true decentralization and greater scalability while preventing a potential 51% attack.</p>
+            <p>The initial PoS algorithms and the more sophisticated versions that followed have been compromising decentralization by letting in a level of predictability when it comes to block validators.</p>         -->
             <section>
                 <h3>Security</h3>
                 <p>The Algorand protocol is secure against malicious attacks, making it ideal for transacting, holding high-value assets and building secure enterprise applications.</p>
-                <p>It maintains security on both network and consensus protocol levels and protects individual user's accounts.</p>
+                <p>It maintains security on both network and consensus protocol (PPoS) levels and protects individual user's accounts.</p>
             </section>
             <section>
                 <h3>Scalability</h3>
-                <p>The Algorand protocol can handle a large number of transactions per second, making it a more scalable solution than Bitcoin or Ethereum.</p>
-                <p>Algorand's consensus protocol does away with the need for computational power used in Bitcoin to solve cryptographic problems.</p>
-                <p>Instead, the protocol's computation cost per user is only used to generate and verify signatures, as well as operations requiring simple counting.</p>
-                <p>According to Algorand, it can “scale to millions of users and sustain a high transaction rate without incurring significant cost to participating users".</p>
+                <p>As of today, Algorand can process over 6000 transactions per second (tps) soon to become 10,000 tps with deterministic and instant finality.</p>
+                <p>On top of that, it's introducing a feature known as block pipelining to boost the tps performance to more than 45,000, which will make it more scalable than Visa.</p>
+            </section>
+            <section>
+                <h3>Finality</h3>
+                <p>In most blockchains, the receipt of a transaction is not a guarantee that the transaction is valid.</p>
+                <p>In order to gain confidence that the transaction is indeed valid, we need to wait for multiple blocks to be created. And each new block exponentially increases the probability that the block is valid. 
+                    Because of this, these networks can fork and split into various variations of the same blockchain.
+                </p>
+                <p>However, Algorand operate differently from other blockchains. It has one block finality. 
+                    That means, after one block, you know with confidence that the block is valid.
+                </p>
+                <h4>The Process (<a href="pdf/forbes.pdf">Source</a>):</h4>
+                <p>First, we agree on one block before producing or starting the generation of the next block. 
+                    But our agreement on the block is so fast, and in few seconds we already have produced the block, circulated it and agreed on it. 
+                    Then we start working on the next block or transaction.
+                </p>
+                <p>So, by agreeing on the block, our blockchain never forks and that is really a big advantage over other chains.</p>
+                <p>Because not only do you want to add the blocks quickly, but you also want to add them with finality.</p>
+                <p>If in a typical blockchain you see a payment made to you in the latest block, you should not necessarily ship the goods, 
+                    because if there is a fork, the blockchain will go in another direction and the block with your payment may actually end up on the short fork, which will disappear.
+                </p>
             </section>
             <section>
                 <h3>Decentralization</h3>
-                <p>Algorand is entirely decentralized with no central authority or singular locus of control.</p> 
+                <p>Algorand protocoal is entirely decentralized with no central authority or singular focus of control.</p> 
                 <p>Transactions are verified by participating nodes in the network and each node has an equal say in decision-making. This makes Algorand a very decentralized system.</p>
                 <p>Everyone on the network also has a chance of being part of the committee of users that approve each block because the selection is both random and confidential. There is no fixed committee and its nodes are run by people from all over the world.</p>
+                <p>Another concern regarding decentralization is that Algorand have relay nodes. in Algorand In Algorand only communicate, and they do not perform consensus and can't sign transactions 
+                (you can read more about it <a href="https://algonaut.space/algorand-nodes/">here</a>).</p>
+                <p>Althought the protocol is fully decentrlized, the circulating supply of $ALGO tokens isn't fully decentrlized yet. But the foundation slowly distribute tokens to the market and this issue will be solved by 2030 
+                (as you can see in this <a href="https://www.algorand.foundation/tokenomics">Algo Tokenomics Report</a>).</p>
             </section>
         </article>
-        <footer>
-            <p>Build by 
-                <a href="https://twitter.com/alisayar_" target="_blank">alisa.algo</a>
-                | 2023 |
-                <a href="ttps://github.com/alisa-yar/algorand" target="_blank">source code</a>
-            </p>
-        </footer>
-    </main>
-    <script src="dark.js"></script>
+
+        <article class="about">
+            <h2>Pure Proof of Stake (<a href="https://algorand.com/technology/pure-proof-of-stake">PPoS</a>)</h2>
+            <p>Algorand uses a pure proof-of-stake (PPoS) protocol built on 
+                <a href="https://opus.lib.uts.edu.au/bitstream/10453/140228/2/02whole.pdf">Byzantine consensus</a>.</p>
+            <p>Each user's influence on the choice of a new block is proportional to its stake (number of tokens) in the system.</p>
+            <p>Users are randomly and secretly selected to propose blocks and vote on block proposals. All online users have the chance to be selected to propose and vote.</p>
+            <p>The likelihood that a user will be chosen, and the weight of its proposals and votes, are directly proportional to its stake.</p>
+            <p>Algorand's PPoS approach ties the security of the whole economy to the honesty of the majority of the economy, rather than to that of a small subset of the economy..</p>
+            <p>The system is secure when most of the money is in honest hands.</p>
+            <p>With other approaches (outlined below), a small subset of the economy determines the security of the whole economy, which means just a few users can prevent other users from transacting.</p>
+            <p> In Algorand, it is impossible for the owners of a small fraction of the money to harm the whole system, and it would be foolish for the owners of the majority of the money to misbehave as it would diminish the currency's purchasing power and ultimately devalue their own assets.</p>      
+        </article>
+    </div>
+
+    <footer>
+        <p>Build by 
+            <a href="https://twitter.com/alisayar_" target="_blank">alisa.algo</a>
+            | 2023 |
+            <a href="ttps://github.com/alisa-yar/algorand" target="_blank">Source Code</a>
+        </p>
+    </footer>
+</main>
 </body>
 </html>
