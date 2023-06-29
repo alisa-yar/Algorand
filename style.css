@@ -114,8 +114,8 @@ nav a:hover, a:focus {
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
     margin: 5px;
+    margin-top: 60px;
     padding: 10px 20px; /*vertical | horizontal*/
 }
 
@@ -155,19 +155,3 @@ footer p {
 .glossary h2 {
     font-size: 23px;
 }
-
-/* 
-* {
-    box-sizing: border-box;
-}
-button {
-    background: none;
-    border: none;
-    text-align: left;
-}
-input, textarea {
-    background: none;
-    display: block;
-    width: 100%;
-} 
-*/
