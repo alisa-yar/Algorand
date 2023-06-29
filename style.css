@@ -9,6 +9,7 @@
     --navText: #818181;
     --linkColor: #0073E5;
 }
+
 .light-mode {
     --bg: white;
     --textColor: black;
@@ -19,97 +20,114 @@
     --linkColor: #0073E5; 
 }
 
-/**********BASIC STYLES**********/
+/**********RESET AND REUSED**********/
 body {
-    background-color: var(--bg);
-    color: var(--textColor); 
-    font-family: 'Inter', sans-serif;
     margin: 0; 
     padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--textColor); 
 }
+
+h1 {
+    font-size: 37px;
+}
+
+h2 {
+    font-size: 25px;
+    align-items: left;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--linkColor);
+}
+
+p {
+    color: var(--textColorSec);
+    font-size: 18px;
+    align-items: left;
+}
+
+li {
+    list-style-type: none;
+    line-height: 2;
+}
+
+button {
+    background: none;
+    border: none;
+    text-align: left;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    background: none;
+}
+
+/**********NAVBAR**********/
+nav {
+    background-color: var(--navBg);
+    width: 100%;
+    height: 60px;
+    position: fixed;      
+    display: inline-flex;           
+    align-items: center; 
+    justify-content: center;
+    top: 0;
+    box-sizing: border-box;
+}
+
+nav li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+}
+
+nav a {
+    color: var(--textColor);
+    padding: 10px;
+    display: inline-block;
+    align-items: center;
+}
+
+#active {
+    color: var(--linkColor);
+}
+
+nav a:hover, a:focus {
+    color: var(--textColorSec);
+}
+
+#icon {
+    width: 20px;
+    padding: 10px;
+}
+
+/**********MAIN**********/
 main {
     padding: 10px 20px; /*vertical | horizontal*/
 }
 
-/**********TYPOGRAPHY**********/
-h1 {
-    font-size: 37px;
-}
-h2 {
-    align-items: left;
-    font-size: 25px;
-}
-h3 {
-    font-size: 20px;
-}
-h4 {
-    font-size: 15px;
-}
-a {
-    color: var(--linkColor);
-    text-decoration: none;
-}
-p {
-    align-items: left;
-    color: var(--textColorSec);
-    font-size: 18px;
-}
-
-/**********LISTS**********/
-li {
-    line-height: 2;
-    list-style-type: none;
-}
-
-/**********NAVIGATION BAR**********/
-nav {
-    align-items: center; 
-    background-color: var(--navBg);
-    box-sizing: border-box;
-    display: inline-flex;           
-    height: 60px;
-    justify-content: center;
-    position: fixed;      
-    top: 0;
-    width: 100%;
-}
-/*
-div.nav > ul.items > li --> div.nav ul.items li --> .nav .items li --> .nav .items .nav-item-class --> .nav .nav-item-class --> .nav-item-class
-change multiple rows in the same column: selection -> add cursor below (option-command-down)
-command pallate -> sort lines ascending
-*/
-nav li {
-    align-items: center; 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-nav a {
-    align-items: center;
-    color: var(--textColor);
-    display: inline-block;
-    padding: 10px;
-}
-#active {
-    color: var(--linkColor);
-}
-nav a:hover, a:focus {
-    color: var(--textColorSec);
-}
-#icon {
-    padding: 10px;
-    width: 20px;
-}
-
 /**********CARD**********/
 .card {
-    background-color: var(--navBg);
-    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    margin-top: 60px;
     margin: 5px;
     padding: 10px 20px; /*vertical | horizontal*/
+    border-radius: 20px;
+    background-color: var(--navBg);
+    margin-top: 60px;
 }
 
 /**********FOOTER**********/
@@ -119,40 +137,21 @@ footer p {
     text-align: center;
 }
 
-/**********SPECIFIC CSS:**********/
-
-/**********index.html**********/
-.subtitle {
-    font-size: 22px;
-}
-
-/**********tools.html, info.html**********/
+/**********.links**********/
 .links li {
-    align-items: left; 
-    font-size: 18px;
     line-height: 2;
+    font-size: 18px;
+    align-items: left; 
 }
 
-/**********glossary.html**********/
 .about p, .glossary p {
     line-height: 1.5;
 }
+
 .glossary h2 {
     font-size: 23px;
 }
 
-/* 
-* {
-    box-sizing: border-box;
+.subtitle {
+    font-size: 22px;
 }
-button {
-    background: none;
-    border: none;
-    text-align: left;
-}
-input, textarea {
-    background: none;
-    display: block;
-    width: 100%;
-} 
-*/
