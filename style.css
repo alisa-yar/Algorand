@@ -11,11 +11,11 @@
 }
 
 .light-mode {
-    --bg: white;
+    --bg: #ECECEC;
     --textColor: black;
     --textColorSec: #6C6D70;
     --select: #818181;
-    --navBg: #ECECEC;
+    --navBg: white;
     --navText: black;
     --linkColor: #007AFF; 
 }
