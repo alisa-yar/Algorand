@@ -104,6 +104,7 @@ nav a:hover, a:focus {
     color: var(--textColorSec);
 }
 #icon {
+    height: 20px;
     padding: 10px;
     width: 20px;
 }
