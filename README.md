@@ -17,4 +17,7 @@ https://algofam.tech
 - Add search to the glossary
 - Create a back-end server dynamically generate the HTML so that the server can pull and inject the latest data for dynamic values such as avg TPS, avg transaction cost, and circulating supply [From Twitter Comment by @TwoGateProxy](https://twitter.com/TwoGateProxy/status/1669946696309301248)
   
-
+---
+## Started as:  
+![first](IMG_0608.png)  
+![second](IMG_0609.png)
