@@ -2,6 +2,8 @@
 https://algorand-info.netlify.app  
 https://algofam.tech  
 
+This website was build for Algorand blockchain newcomers who wants to learn more about it. I also added links to useful projects on Algorand (like wallets, DeFi platforms and NFT marketplaces) and crypto glossary with some basic crypto definitions that I thought was important to know if you just started to read about crypto.  
+
 ## To Do
 - Add Algorand Essential Tools :white_check_mark:
 - Add Information Resources :white_check_mark:
